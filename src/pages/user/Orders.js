@@ -10,7 +10,7 @@ const Orders = () => {
     const [orders, setOrders] = useState([]);
     const getOrders = async () => {
         try {
-            const { data } = await axios.get(`/api/order`);
+            const { data } = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/order`);
             setOrders(data);
         } catch (error) {
             toast.error("Something went wrong!!");
@@ -58,7 +58,7 @@ const Orders = () => {
                                             { o?.products?.map((p) => (
                                                 <div className='row p-3 mb-2'>
                                                     <div className='col-md-4'>
-                                                        <img src={`/api/product-photo/${p._id}`} className="card-img-top"
+                                                        <img src={`https://ecommerce-server-6dot.onrender.com/api/product-photo/${p._id}`} className="card-img-top"
                                                             style={{ height: "300px" }} alt="product image" />
                                                     </div>
                                                     <div className='col-md-8'>

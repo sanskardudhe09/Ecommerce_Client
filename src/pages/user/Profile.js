@@ -23,7 +23,7 @@ const Profile = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const {data} = await axios.put(`/api/profile`, {name, email, password
+            const {data} = await axios.put(`https://ecommerce-server-6dot.onrender.com/api/profile`, {name, email, password
             ,address, phone});
             if(!data?.newuser){
                 toast.error("Something went wrong!!");
@@ -75,4 +75,4 @@ const Profile = () => {
     )
 }
 
-                    export default Profile
+export default Profile

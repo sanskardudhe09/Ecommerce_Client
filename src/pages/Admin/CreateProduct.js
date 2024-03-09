@@ -17,7 +17,7 @@ const CreateProduct = () => {
   const [shipping, setShipping] = useState('');
   const navigate = useNavigate();
   const getAllCategory = async (req,res) => {
-    const {data} = await axios.get(`/api/getall-category`);
+    const {data} = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/getall-category`);
     if(data.category){
         setCategories(data.category);
     }else{
@@ -36,7 +36,7 @@ const CreateProduct = () => {
         prodData.append("quantity", quantity);
         prodData.append("photo", photo);
         prodData.append("shipping", shipping);
-        const {data} = await axios.post(`/api/create-product`, prodData);
+        const {data} = await axios.post(`https://ecommerce-server-6dot.onrender.com/api/create-product`, prodData);
         console.log(data);
         if(data?.product){
             toast.success("Product Created Successfully!!");

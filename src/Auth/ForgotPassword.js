@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try{
-        const res = await axios.post(`/api/forgot-password`, {email,newpassword, answer});
+        const res = await axios.post(`https://ecommerce-server-6dot.onrender.com/api/forgot-password`, {email,newpassword, answer});
         if(res && res.data.user){
             toast.success("User Password Updated Successfully!!");
             setTimeout(()=>{
