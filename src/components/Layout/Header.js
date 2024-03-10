@@ -50,7 +50,7 @@ const Header = () => {
                   </li>
                   {categories.map((c) => (
                     <li>
-                      <Link className="dropdown-item" to={`https://ecommerce-server-6dot.onrender.com/category/${c.slug}`}>{c.name}</Link>
+                      <Link className="dropdown-item" to={`/category/${c.slug}`}>{c.name}</Link>
                     </li>
                   ))}
                 </ul>
