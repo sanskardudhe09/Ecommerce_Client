@@ -6,6 +6,7 @@
     flex-direction: column;
 }
 .formcont form{
+    width: 35%;
     padding: 20px;
     border: 1px solid gray;
     background-image: linear-gradient(to bottom right, rgb(242, 242, 142),rgb(252, 159, 159));
