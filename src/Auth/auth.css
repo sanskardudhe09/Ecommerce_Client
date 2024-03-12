@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: column;
     width: 700px;
+    resize: both;
     height: 73vh;
 }
 .profile-authform{
@@ -20,6 +21,7 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    resize: both;
     width: 700px;
     height: 66vh;
 }
@@ -42,6 +44,7 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    resize: both;
     width: 600px;
     height: 42vh;
 }
@@ -55,6 +58,8 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    resize: both;
     width: 600px;
     height: 50vh;
 }
+
