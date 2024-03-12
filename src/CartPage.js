@@ -77,7 +77,7 @@ const CartPage = () => {
                         </h4>
                     </div>
                 </div>
-                <div className='row mt-3 ms-5 d-flex justify-content-center'>
+                <div className='row mt-3 ms-5'>
                     <div className='col-md-7 card'>
                         {cart?.map((p) => (
                             <div className='row p-3 mb-2'>
