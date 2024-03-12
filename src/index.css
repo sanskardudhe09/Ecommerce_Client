@@ -24,10 +24,6 @@
     font-weight: 500;
     text-transform: capitalize !important;
 }
-main{
-  resize:both;
-  overflow: scroll;
-}
 /* Styling for footer*/
 .footer{
     color: white;
