@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import DropIn from "braintree-web-drop-in-react"
 import axios from 'axios';
+import "./index.css";
 const CartPage = () => {
     const [cart, setCart] = useCart();
     const [auth, setAuth] = useAuth();
@@ -65,7 +66,7 @@ const CartPage = () => {
     },[auth?.token])
     return (
         <Layout>
-            <div className='cart-page'>
+            <div>
                 <div className='row mb-1'>
                     <div className='col-md-12'>
                         <h2 className='text-center mt-3'>
@@ -77,8 +78,8 @@ const CartPage = () => {
                         </h4>
                     </div>
                 </div>
-                <div className='row mt-3 ms-5'>
-                    <div className='col-md-6 card'>
+                <div className='row mt-3 ms-5 cart-page'>
+                    <div className='col-md-7 card'>
                         {cart?.map((p) => (
                             <div className='row p-3 mb-2'>
                                 <div className='col-md-4'>

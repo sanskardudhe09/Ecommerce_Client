@@ -34,7 +34,7 @@ const Header = () => {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <NavLink to="/" className="navbar-brand ml-5"> <FaBagShopping /> E-COMMERCE APP</NavLink>
+            <NavLink to="/" className="navbar-brand ml-5"> <FaBagShopping /> E-BASKET APP</NavLink>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchFom />
               <li className="nav-item">
