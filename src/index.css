@@ -133,14 +133,5 @@ main{
    width: 400px;
    background-image: linear-gradient(to bottom right, rgb(239, 107, 122), rgb(241, 168, 249));
  }
- @media screen and (max-width: 600){
-  .cart-page{
-    display: flex;
-    justify-content: center;
-  }
-  .cart-summary{
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
- }
+ 
  
