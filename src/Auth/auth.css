@@ -84,4 +84,9 @@
     width: 600px;
     height: 50vh;
 }*/
+@media screen and (max-width: 600px) {
+    .formcont form{
+        width: 50%;
+    }
+}
 
