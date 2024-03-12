@@ -13,7 +13,7 @@ const About = () => {
              <img className="aboutimg"src="/images/about.jpg"  alt="about img"/>
              <h3 class="responsive-head">We at E-Basket provides variety of features including affordable products and efficient order tracking </h3>
           </div>
-          <div className='col-md-4 mt-5'>
+          <div className='col-md-4 mt-5 aboutcntclass'>
             <h4 className='aboutcnt'>
               <span className='cnthead'>We at E-BASKET provides </span>
                variety of features including affordable products and efficient 
