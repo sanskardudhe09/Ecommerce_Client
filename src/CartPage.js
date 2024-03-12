@@ -95,7 +95,7 @@ const CartPage = () => {
                             </div>
                         ))}
                     </div>
-                    <div className='col-md-4 mt-3 text-center d-flex justify-content-center'>
+                    <div className='col-md-4 mt-3 text-center'>
                         <h3>Cart Summary</h3>
                         <h4>Total  |  Checkout  |  Payment</h4>
                         <hr />
