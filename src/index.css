@@ -58,6 +58,9 @@
     font-size: large;
     font-weight: 600;
  }
+ .responsive{
+  display: none;
+ }
  .responsive-head{
   display: none;
  }
@@ -75,7 +78,7 @@
  }
  .contactform{
     margin:auto;
-    width: 900px;
+    width: 100%;
     border: 0.52px solid rgb(131, 123, 123);
     border-radius: 4px;
  }
@@ -133,20 +136,39 @@
  }
  @media screen and (max-width: 600px){
   .cart-page{
-    margin: auto;
+    margin-right: 30px;
   }
   .aboutcnt{
     display: none;
   }
-  .aboutimg{
+  .responsive .aboutimg{
     width: 85%;
     height: 85%;
+  }
+  .responsive{
+    display: flex;
   }
   .responsive-head{
     position: absolute;
     top: 20px;
     left: 45px;
   }
+  .policyimg{
+    display: none;
+  }
+  .listcontainer{
+    background-image: linear-gradient(to bottom right,  rgb(168, 168, 250), white);
+     margin-left: 50px;
+     border: 1px solid gray;
+  }
+  .listitem{
+    font-size:large;
+    letter-spacing: 1px;
+ }
+ .policyicon{
+   height: 80px;
+   margin-left: 80px;
+ }
  }
  
  
