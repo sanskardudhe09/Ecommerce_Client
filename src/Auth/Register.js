@@ -29,7 +29,7 @@ const Register = () => {
     }
     return (
         <Layout>
-            <div className='formcont pt-5'>
+            <div className='formcont pt-5' style={{minHeight: "90vh"}}>
                 <form className='authform' onSubmit={handleSubmit}>
                     <h3 className="title">REGISTER HERE</h3>
                     <label  className="form-label">Name</label>
