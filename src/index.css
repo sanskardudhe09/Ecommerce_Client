@@ -158,7 +158,8 @@
   }
   .listcontainer{
     background-image: linear-gradient(to bottom right,  rgb(168, 168, 250), white);
-     margin-left: 50px;
+     margin-left: 20px;
+     margin-right: 20px;
      border: 1px solid gray;
   }
   .listitem{
@@ -167,8 +168,16 @@
  }
  .policyicon{
    height: 80px;
-   margin-left: 80px;
+   margin-left: 100px;
  }
+  .contactimg{
+    width: 100%;
+    height: 40vh;
+  }
+  .contactform{
+    width:100%;
+    height: 30vh;
+  }
  }
  
  
