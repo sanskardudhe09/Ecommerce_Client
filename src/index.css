@@ -139,7 +139,7 @@
     margin-right: 30px;
   }
   .aboutpage{
-    height: 70vh;
+    height: 100vh;
   }
   .aboutcnt{
     display: none;
@@ -176,6 +176,7 @@
  }
   .policypage{
     background-size: 100%;
+    height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -187,7 +188,7 @@
    display: none;
   }
   .contactpage{
-    min-height: 70vh;
+    min-height: 100vh;
   }
   .contactform{
     margin-top: 0px !important;
