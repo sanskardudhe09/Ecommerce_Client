@@ -90,7 +90,7 @@ main{
  }
  .policypage{
     padding: 50px;
-    background-image: linear-gradient( rgb(64, 64, 242), rgb(7,7,109));
+    background-image: linear-gradient(to bottom right, rgb(64, 64, 242), rgb(7,7,109));
     background-size: cover;
     overflow: hidden;
  }
@@ -153,11 +153,10 @@ main{
     display: none;
   }
   .responsive{
-    display: inline block;
+    display: block;
     position: relative;
   }
   .responsive img{
-    display: block;
     width: 100%;
     height: 100%;
   }
@@ -170,7 +169,7 @@ main{
   }
   .policypage{
     height: 800px;
-    background-image: linear-gradient(rgb(64, 64, 242), rgb(7,7,109));
+    background-image: linear-gradient(to bottom right, rgb(64, 64, 242), rgb(7,7,109));
     background-size: cover;
     overflow: hidden;
   }
