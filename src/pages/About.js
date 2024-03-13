@@ -5,10 +5,10 @@ const About = () => {
   return (
     <Layout>
         <div className='row aboutpage justify-content-between container-fluid'>
-          <div className='mt-3 responsive bg-image'>
-             <img className="aboutimg"src="/images/about.jpg"  alt="about img"/>
-             <div class="responsive-head position-absolute text-light">
-              We at E-Basket provides variety of features including affordable products and efficient order tracking </div>
+          <div className='mt-3 responsive card text-white'>
+             <img className="card-img aboutimg"src="/images/about.jpg"  alt="about img"/>
+             <div class="responsive-head card-img-overlay">
+              <h4>We at E-Basket provides variety of features including affordable products and efficient order tracking</h4> </div>
           </div>
           <div className='col-md-6 mt-5 non-responsive'>
              <img className="aboutimg"src="/images/about.jpg"  alt="about img"/>
