@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useParams , useNavigate} from 'react-router-dom';
-import "../index.css";
+import "./index.css";
 const CategoryProdPage = () => {
     const [products, setProducts] = useState([]);
     const [category, setCategory] = useState([]);
