@@ -250,6 +250,12 @@ main{
     justify-content: center;
     margin-left: 20px;
   }
+  .userdashleft{
+    width: 70%;
+  }
+  .userdashright{
+    width: 70%;
+  }
  }
  @media screen and (max-width: 500px) {
   .card-body{

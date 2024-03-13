@@ -36,7 +36,7 @@ const ProductDetails = () => {
                     <img src={`https://ecommerce-server-6dot.onrender.com/api/product-photo/${product._id}`} className="card-img-top"
                         style={{ height: "450px" }} alt="product image" />
                 </div>
-                <div className='card col-md-6' style={{ height: "250px", borderColor: "gray" }}>
+                <div className='card col-md-6 ml-2' style={{ height: "250px", borderColor: "gray" }}>
                     <h2 className='text-center mt-3 proddetails'>Product Details</h2>
                     <div className='mt-3'>
                         <h5>Name: {product.name}</h5>

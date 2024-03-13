@@ -1,18 +1,19 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import UserPanel from '../../components/Layout/UserPanel'
-import { useAuth } from '../../context/auth'
+import { useAuth } from '../../context/auth';
+import "../../index.css";
 
 const Dashboard = () => {
 const [auth, setAuth] = useAuth();
   return (
     <Layout>
-        <div className='container-fluid m-3 p-3'>
+        <div className='container-fluid m-3 p-3 userdash'>
             <div className='row'>
-                <div className='col-md-3'>
+                <div className='col-md-3 userdashleft'>
                     <UserPanel />
                 </div>
-                <div className='col-md-9'>
+                <div className='col-md-9 userdashright'>
                     <div className='card w-50 m-5 p-2'>
                         <h2 className='text-center'>Admin Details</h2>
                         <div className='d-flex flex-column justify-content-center'>
