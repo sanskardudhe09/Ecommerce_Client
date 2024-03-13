@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
-import "../index.css";
+import ".././index.css";
 const ProductDetails = () => {
     const [product, setProduct] = useState({});
     const [similarprod, setSimilarProd] = useState([]);
