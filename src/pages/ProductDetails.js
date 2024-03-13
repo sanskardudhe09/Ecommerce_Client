@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Layout from '../components/Layout/Layout'
 import { toast } from 'react-toastify';
 import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom';
+import "../index.css";
 const ProductDetails = () => {
     const [product, setProduct] = useState({});
     const [similarprod, setSimilarProd] = useState([]);
@@ -30,13 +31,13 @@ const ProductDetails = () => {
     }, [params?.slug])
     return (
         <Layout>
-            <div className='row container mt-4'>
+            <div className='row container mt-4 prod-detail-page'>
                 <div className='col-md-6'>
                     <img src={`https://ecommerce-server-6dot.onrender.com/api/product-photo/${product._id}`} className="card-img-top"
                         style={{ height: "450px" }} alt="product image" />
                 </div>
                 <div className='card col-md-6' style={{ height: "250px", borderColor: "gray" }}>
-                    <h2 className='text-center mt-3'>Product Details</h2>
+                    <h2 className='text-center mt-3 proddetails'>Product Details</h2>
                     <div className='mt-3'>
                         <h5>Name: {product.name}</h5>
                         <h5>Description: {product.desc}</h5>

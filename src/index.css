@@ -246,12 +246,33 @@ main{
  .aboutcntclass{
   display: none;
  }
+  .proddetails{
+    justify-content: center;
+    margin-left: 20px;
+  }
  }
  @media screen and (max-width: 500px) {
   .card-body{
     display: flex;
     flex-direction: column;
   }
+  .card-body button{
+    margin-bottom: 10px;
+  }
+   .category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .prod-detail-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+    .card-img-top{
+      height: 300px;
+    }
+    
  }
  
  
