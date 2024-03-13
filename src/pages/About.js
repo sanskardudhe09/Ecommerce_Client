@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Layout>
         <div className='row aboutpage justify-content-between container-fluid'>
-          <div className='mt-3 responsive card text-white'>
+          <div className='mt-3 responsive text-white'>
              <img className="card-img aboutimg"src="/images/about.jpg"  alt="about img"/>
              <div class="responsive-head card-img-overlay">
               <h4>We at E-Basket provides variety of features including affordable products and efficient order tracking</h4> </div>

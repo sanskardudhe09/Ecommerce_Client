@@ -115,6 +115,13 @@ main{
    height: 800px;
    font-family: 'Poppins', sans-serif;
  }
+ .homepage{
+  display: flex;
+  justify-content: center;
+ }
+ .products{
+  margin-top: 20px;
+ }
  .heading{
    padding-top: 130px;
    font-size: 150px;
@@ -239,6 +246,12 @@ main{
  .aboutcntclass{
   display: none;
  }
+ }
+ @media screen and (max-width: 500px) {
+  .card-body{
+    display: flex;
+    flex-direction: row;
+  }
  }
  
  
