@@ -90,8 +90,7 @@ main{
  .policypage{
     padding: 50px;
     background-image: url('../public/images/policyback.jpg');
-    background-clip: border-box;
-    background-size: inherit;
+    background-size: cover;
  }
  .policyimg {
     width: 60%;
@@ -164,7 +163,7 @@ main{
     top: 50%;
     left: 20%;
     color: white;
-    
+
   }
   .policypage{
     height: 100%;
@@ -186,10 +185,9 @@ main{
     letter-spacing: 0.6px;
  }
   .policypage{
-    background-size: 100%;
+    background-size: 100% 100%;
+  
     height: 100vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
   }
  .policyicon{
    height: 80px;
@@ -200,7 +198,7 @@ main{
   }
   .contactpage{
     min-height: 100vh;
-    background-image: linear-gradient(whitesmoke, rgb(244, 148, 126));
+    background-image: linear-gradient(white, rgb(244, 148, 126));
   }
   .contactform{
     display: none;
