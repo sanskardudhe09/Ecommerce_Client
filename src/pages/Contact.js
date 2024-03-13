@@ -30,6 +30,24 @@ const Contact = () => {
               <BiSupport />:  1800-0000-0000 (toll free)
             </p>
           </div>
+          <div className='contactform-responsive'>
+            <h4 className='text-center mt-5 contact-heading' style={{
+              letterSpacing: "2px", fontWeight: 'bold'
+            }}>With 24x7 support for customers regarding queries and products..</h4>
+            <h4 className='text-center mt-3 detail'>Our Details</h4>
+            <p className='text-center mt-3'>
+              <FiMail /> :  www.help@ecommerceapp.com
+            </p>
+            <p className='text-center mt-3'>
+              <FaPhone /> :  012-345678
+            </p>
+            <p className='text-center mt-3'>
+              <FaInstagram /> :  @ecommerceapp
+            </p>
+            <p className='text-center mt-3'>
+              <BiSupport />:  1800-0000-0000 (toll free)
+            </p>
+          </div>
         </div>
     </Layout>
   )
