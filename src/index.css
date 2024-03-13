@@ -72,6 +72,7 @@ main{
  }
  /* styling for contact page */
  .contactpage{
+   height: 100vh;
    background-image: linear-gradient(whitesmoke, rgb(244, 148, 126));
  }
  .contactimg{
@@ -89,8 +90,9 @@ main{
  }
  .policypage{
     padding: 50px;
-    background-image: url('../public/images/policyback.jpg');
+    background: url('../public/images/policyback.jpg') 100% 100%;
     background-size: cover;
+    overflow: auto;
  }
  .policyimg {
     width: 60%;
@@ -167,9 +169,8 @@ main{
   }
   .policypage{
     height: 100%;
-    background-image: url('../public/images/policyback.jpg');
-    background-size: inherit;
-    background-clip: border-box;
+    background: url('../public/images/policyback.jpg') 100% 100%;
+    background-size: cover;
   }
   .policyimg{
     display: none;
@@ -197,7 +198,7 @@ main{
    display: none;
   }
   .contactpage{
-    min-height: 100vh;
+    min-height: 800px;
     background-image: linear-gradient(white, rgb(244, 148, 126));
   }
   .contactform{
