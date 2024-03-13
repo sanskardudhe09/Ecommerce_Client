@@ -90,7 +90,7 @@ main{
  }
  .policypage{
     padding: 50px;
-    background: linear-gradient(dark rgb(7, 7, 109), rgb(7,7,109));
+    background-image: linear-gradient( rgb(64, 64, 242), rgb(7,7,109));
     background-size: cover;
     overflow: hidden;
  }
@@ -153,10 +153,11 @@ main{
     display: none;
   }
   .responsive{
-    display: block;
+    display: inline block;
     position: relative;
   }
-  .responsive .aboutimg{
+  .responsive img{
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -165,11 +166,11 @@ main{
     top: 50%;
     left: 20%;
     color: white;
-
+    text-align: left;
   }
   .policypage{
     height: 800px;
-    background: linear-gradient(dark rgb(7, 7, 109), rgb(7,7,109));
+    background-image: linear-gradient(rgb(64, 64, 242), rgb(7,7,109));
     background-size: cover;
     overflow: hidden;
   }
@@ -183,7 +184,7 @@ main{
      overflow: hidden;
   }
   .listitem{
-    font-size:small;
+    font-size: medium;
     letter-spacing: 0.6px;
  }
   .policypage{
