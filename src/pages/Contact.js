@@ -13,7 +13,7 @@ const Contact = () => {
              <img className="contactimg img-fluid" src="/images/con.jpg"  alt="contact img"/>
           </div>
           <div className='contactform mt-5'>
-            <h4 className=' text-center mt-5' style={{
+            <h4 className='text-center mt-5 contact-heading' style={{
               letterSpacing: "2px", fontWeight: 'bold'
             }}>With 24x7 support for customers regarding queries and products..</h4>
             <h4 className='text-center mt-3 detail'>Our Details</h4>
