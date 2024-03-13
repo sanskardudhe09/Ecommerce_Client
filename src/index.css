@@ -7,6 +7,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 /*styling for navbar*/
@@ -75,6 +77,9 @@
  .contactimg{
     height: 50%;
     width: 100%;
+ }
+ .contactform-responsive{
+  display: none;
  }
  .contactform{
     margin:auto;
@@ -145,16 +150,18 @@
     display: none;
   }
   .responsive .aboutimg{
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: auto;
   }
   .responsive{
-    display: flex;
+    position: relative;
   }
   .responsive-head{
     position: absolute;
-    top: 20px;
-    left: 45px;
+    top: 50%;
+    left: 20%;
+  }
+  .responsive-head h3{
     color: black;
   }
   .policypage{
@@ -190,6 +197,7 @@
   }
   .contactpage{
     min-height: 100vh;
+    background-color: whitesmoke;
   }
   .contactform{
     display: none;
@@ -202,14 +210,14 @@
   .contactus{
     display: none;
   }
-  .contactform .contact-heading{
+  .contactform-responsive .contact-heading{
     font-size: 29px;
   }
-  .contactform .detail{
+  .contactform-responsive .detail{
     margin-top: 50px !important;
     font-size: 20px;
   }
-  .contactform p{
+  .contactform-responsive p{
     margin-top: 70px !important;
     font-size: 20px;
   }
