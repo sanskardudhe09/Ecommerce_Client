@@ -157,7 +157,7 @@
     left: 45px;
   }
   .policypage{
-    min-height: 70vh;
+    min-height: 80vh;
     background-image: url('../public/images/policyback.jpg');
     background-size: cover;
   }
