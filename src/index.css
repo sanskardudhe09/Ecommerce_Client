@@ -70,7 +70,7 @@
  }
  /* styling for contact page */
  .contactpage{
-   background-image: linear-gradient(rgb(247, 162, 162), white);
+   background-image: linear-gradient(rgb(244, 148, 126), white);
  }
  .contactimg{
     height: 50%;
@@ -190,7 +190,7 @@
     min-height: 70vh;
   }
   .contactform{
-    margin-top: 0% !important;
+    margin-top: 0px !important;
     width:100%;
     height: 100vh;
     border: none;
