@@ -72,7 +72,7 @@ main{
  }
  /* styling for contact page */
  .contactpage{
-   height: 100vh;
+   height: 800px;
    background-image: linear-gradient(whitesmoke, rgb(244, 148, 126));
  }
  .contactimg{
@@ -168,7 +168,7 @@ main{
 
   }
   .policypage{
-    height: 100%;
+    height: 800px;
     background: url('../public/images/newpolicyback.jpg') 100% 100%;
     background-size: cover;
   }
@@ -182,12 +182,12 @@ main{
      overflow: hidden;
   }
   .listitem{
-    font-size:large;
+    font-size:small;
     letter-spacing: 0.6px;
  }
   .policypage{
     background-size: 100% 100%;
-    height: 100vh;
+    height: 100%;
   }
  .policyicon{
    height: 80px;
