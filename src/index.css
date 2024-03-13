@@ -72,7 +72,7 @@ main{
  }
  /* styling for contact page */
  .contactpage{
-   background-image: linear-gradient(rgb(244, 148, 126), white);
+   background-image: linear-gradient(whitesmoke, rgb(244, 148, 126));
  }
  .contactimg{
     height: 50%;
@@ -90,6 +90,8 @@ main{
  .policypage{
     padding: 50px;
     background-image: url('../public/images/policyback.jpg');
+    background-clip: border-box;
+    background-size: inherit;
  }
  .policyimg {
     width: 60%;
@@ -149,26 +151,26 @@ main{
   .aboutcnt{
     display: none;
   }
-  .responsive .aboutimg{
-    width: 100%;
-    height: 100%;
-  }
   .responsive{
     display: block;
     position: relative;
+  }
+  .responsive .aboutimg{
+    width: 100%;
+    height: 100%;
   }
   .responsive-head{
     position: absolute;
     top: 50%;
     left: 20%;
-  }
-  .responsive-head h3{
-    color: black;
+    color: white;
+    
   }
   .policypage{
     height: 100%;
     background-image: url('../public/images/policyback.jpg');
-    background-size: 100% 100%;
+    background-size: inherit;
+    background-clip: border-box;
   }
   .policyimg{
     display: none;
@@ -198,7 +200,7 @@ main{
   }
   .contactpage{
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-image: linear-gradient(whitesmoke, rgb(244, 148, 126));
   }
   .contactform{
     display: none;
