@@ -90,9 +90,9 @@ main{
  }
  .policypage{
     padding: 50px;
-    background: url('../public/images/newpolicyback.jpg') 100% 100%;
+    background: linear-gradient(dark rgb(7, 7, 109), rgb(7,7,109));
     background-size: cover;
-    overflow: auto;
+    overflow: hidden;
  }
  .policyimg {
     width: 60%;
@@ -169,8 +169,9 @@ main{
   }
   .policypage{
     height: 800px;
-    background: url('../public/images/newpolicyback.jpg') 100% 100%;
+    background: linear-gradient(dark rgb(7, 7, 109), rgb(7,7,109));
     background-size: cover;
+    overflow: hidden;
   }
   .policyimg{
     display: none;
