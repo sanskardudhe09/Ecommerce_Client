@@ -151,7 +151,7 @@ main{
   }
   .responsive .aboutimg{
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .responsive{
     display: block;
@@ -168,7 +168,7 @@ main{
   .policypage{
     height: 100%;
     background-image: url('../public/images/policyback.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
   }
   .policyimg{
     display: none;
@@ -211,6 +211,9 @@ main{
     height: 100vh;
     border: none;
   }
+  .contactform-responsive h4{
+    margin-top: 25px;
+  }
   .contactus{
     display: none;
   }
@@ -219,7 +222,7 @@ main{
   }
   .contactform-responsive .detail{
     margin-top: 50px !important;
-    font-size: 20px;
+    font-size: 23px;
   }
   .contactform-responsive p{
     margin-top: 70px !important;
