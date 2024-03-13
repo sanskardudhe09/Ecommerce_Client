@@ -16,7 +16,7 @@ const Contact = () => {
             <h4 className=' text-center mt-5' style={{
               letterSpacing: "2px", fontWeight: 'bold'
             }}>With 24x7 support for customers regarding queries and products..</h4>
-            <h4 className='text-center mt-3'>Our Details</h4>
+            <h4 className='text-center mt-3 detail'>Our Details</h4>
             <p className='text-center mt-3'>
               <FiMail /> :  www.help@ecommerceapp.com
             </p>
