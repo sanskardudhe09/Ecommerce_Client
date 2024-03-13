@@ -250,7 +250,7 @@ main{
  @media screen and (max-width: 500px) {
   .card-body{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
  }
  
