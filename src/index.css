@@ -72,7 +72,7 @@ main{
  }
  /* styling for contact page */
  .contactpage{
-   height: 80vh;
+   height: 100vh;
    background-image: linear-gradient(whitesmoke, rgb(244, 148, 126));
  }
  .contactimg{
@@ -90,7 +90,7 @@ main{
  }
  .policypage{
     padding: 50px;
-    background: url('../public/images/policyback.jpg') 100% 100%;
+    background: url('../public/images/newpolicyback.jpg') 100% 100%;
     background-size: cover;
     overflow: auto;
  }
@@ -187,7 +187,6 @@ main{
  }
   .policypage{
     background-size: 100% 100%;
-    overflow:scroll;
     height: 100vh;
   }
  .policyicon{
