@@ -148,6 +148,12 @@ main{
    width: 400px;
    background-image: linear-gradient(to bottom right, rgb(239, 107, 122), rgb(241, 168, 249));
  }
+ .userdashright-responsive{
+  display: none;
+}
+.userdashright-nonresponsive{
+  display: flex;
+}
  @media screen and (max-width: 600px){
   .cart-page{
     margin-right: 30px;
@@ -253,8 +259,11 @@ main{
   .userdashleft{
     width: 70%;
   }
-  .userdashright{
-    width: 70% !important;
+  .userdashright-responsive{
+    display: block;
+  }
+  .userdashright-nonresponsive{
+    display: none;
   }
  }
  @media screen and (max-width: 500px) {
