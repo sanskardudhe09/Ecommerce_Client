@@ -52,7 +52,7 @@ main{
     height: 90%;
  }
  
- .aboutcnt{
+ .aboutcntclass{
     padding: 130px 55px;
     line-height: 30px;
     letter-spacing: 0.5px;
@@ -162,13 +162,14 @@ main{
   .responsive-head{
     display: block;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 40%;
+    left: 10%;
+    letter-spacing: 2.5px;
     background-color: transparent;
     color: white;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 20px;
-    width: 40%;
+    width: 50%;
     height: 40%;
   }
   .policypage{
