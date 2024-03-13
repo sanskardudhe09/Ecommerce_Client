@@ -153,6 +153,10 @@
     top: 20px;
     left: 45px;
   }
+  .policypage{
+    min-height: 70vh;
+    background-image: url('../public/images/policyback.jpg');
+  }
   .policyimg{
     display: none;
   }
@@ -182,9 +186,6 @@
   .non-responsive{
     display: none;
   }
-  .policypage{
-    background-image: url('../public/images/policyback.jpg');
- }
  .aboutcntclass{
   display: none;
  }

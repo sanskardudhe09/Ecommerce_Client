@@ -4,7 +4,7 @@ import "../index.css";
 const Policy = () => {
   return (
     <Layout>
-      <div className='policypage row'>
+      <div className='policypage row container-fluid'>
             <img className="policyimg img-fluid col-md-6 mt-3"src="/images/policy.jpg"  alt="about img"/>
             <div className='col-md-3 listcontainer'>
               <ol>

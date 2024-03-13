@@ -4,8 +4,8 @@ import "../index.css";
 const About = () => {
   return (
     <Layout>
-        <div className='row aboutpage justify-content-between'>
-          <div className='responsive'>
+        <div className='row aboutpage justify-content-between container-fluid'>
+          <div className='mt-5 responsive'>
              <img className="aboutimg"src="/images/about.jpg"  alt="about img"/>
              <h3 class="responsive-head">We at E-Basket provides variety of features including affordable products and efficient order tracking </h3>
           </div>
