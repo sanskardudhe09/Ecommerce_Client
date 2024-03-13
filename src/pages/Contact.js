@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <Layout>
       <div className='contactpage'>
-          <div className=''>
+          <div className='contactus'>
              <img className="contactimg img-fluid" src="/images/con.jpg"  alt="contact img"/>
           </div>
           <div className='contactform mt-5'>

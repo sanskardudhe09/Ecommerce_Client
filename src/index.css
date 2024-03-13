@@ -138,6 +138,9 @@
   .cart-page{
     margin-right: 30px;
   }
+  .aboutpage{
+    height: 70vh;
+  }
   .aboutcnt{
     display: none;
   }
@@ -171,9 +174,14 @@
     font-size:large;
     letter-spacing: 0.6px;
  }
+  .policypage{
+    background-size: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
  .policyicon{
    height: 80px;
-   margin-left: 129px;
+   margin-left: 135px;
  }
   .contactimg{
    display: none;
@@ -187,16 +195,19 @@
     height: 100vh;
     border: none;
   }
+  .contactus{
+    display: none;
+  }
   .contactform .contact-heading{
-    font-size: 40px;
+    font-size: 29px;
   }
   .contactform .detail{
     margin-top: 50px !important;
-    font-size: 35px;
+    font-size: 20px;
   }
   .contactform p{
     margin-top: 70px !important;
-    font-size: 35px;
+    font-size: 20px;
   }
   .non-responsive{
     display: none;
