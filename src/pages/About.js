@@ -7,7 +7,7 @@ const About = () => {
         <div className='row aboutpage justify-content-between container-fluid'>
           <div className='col-md-6 mt-5 responsive'>
              <img className="aboutimg"src="/images/about.jpg"  alt="about img"/>
-             <div class="responsive-head">We at E-Basket provides variety of features including affordable products and efficient order tracking </div>
+             <div class="responsive-head" style={{width: "300px", height: "300px"}}>We at E-Basket provides variety of features including affordable products and efficient order tracking </div>
           </div>
           <div className='col-md-6 mt-5 non-responsive'>
              <img className="aboutimg"src="/images/about.jpg"  alt="about img"/>

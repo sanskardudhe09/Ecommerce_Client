@@ -99,7 +99,7 @@ main{
  }
  
  .listcontainer{
-   background-image: linear-gradient(to bottom right,  rgb(168, 168, 250), white);
+   background-image: linear-gradient(to bottom right,  rgb(168, 168, 250), rgb(101, 115, 237));
     margin-left: 115px;
     border: 1px solid gray;
  }
@@ -177,7 +177,7 @@ main{
     display: none;
   }
   .listcontainer{
-    background-image: linear-gradient(to bottom right,  rgb(168, 168, 250), white);
+    background-image: linear-gradient(to bottom right,  rgb(168, 168, 250), rgb(101, 115, 237));
      margin-left: 20px;
      border: 1px solid gray;
      overflow: hidden;
