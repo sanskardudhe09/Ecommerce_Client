@@ -293,7 +293,7 @@ main{
     display: none;
    }
    .userorder-responsive .table{
-    width: 60%;
+    font-size: 14px;
    }
  }
  @media screen and (max-width: 500px) {
