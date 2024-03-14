@@ -4,7 +4,7 @@ import AdminPanel from '../../components/Layout/AdminPanel'
 import { toast, ToastContainer } from 'react-toastify';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
-
+import "../../index.css";
 const Products = () => {
     const [products, setProducts] = useState([]);
     const getAllProducts = async () => {
@@ -26,7 +26,7 @@ const Products = () => {
         <Layout>
             <div className='container-fluid m-3 p-3'>
                 <div className='row'>
-                    <div className='col-md-3'>
+                    <div className='col-md-3 admindashleft'>
                         <AdminPanel />
                     </div>
                     <div className='col-md-9'>
