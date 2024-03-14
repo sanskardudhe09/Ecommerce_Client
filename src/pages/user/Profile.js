@@ -24,7 +24,7 @@ const Profile = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const {data} = await axios.put(`https://upset-jade-bream.cyclic.app/api/profile`, {name, email, password
+            const {data} = await axios.put(`https://ecommerce-server-pearl.vercel.app/api/profile`, {name, email, password
             ,address, phone});
             if(!data?.newuser){
                 toast.error("Something went wrong!!");

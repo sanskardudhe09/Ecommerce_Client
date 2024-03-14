@@ -9,7 +9,7 @@ const SearchFom = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const {data} =  await axios.get(`https://upset-jade-bream.cyclic.app/api/search/${values.keyword}`);
+        const {data} =  await axios.get(`https://ecommerce-server-pearl.vercel.app/api/search/${values.keyword}`);
         if(data){
             setValues({...values, results: data});
             navigate("/search");

@@ -21,7 +21,7 @@ const UpdateProduct = () => {
 
     const getSingleProd = async () => {
         try {
-            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/get-product/${params.slug}`);
+            const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/get-product/${params.slug}`);
             if (data.product) {
                 setName(data.product.name);
                 setId(data.product._id);
@@ -38,7 +38,7 @@ const UpdateProduct = () => {
         }
     }
     const getAllCategory = async (req, res) => {
-        const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/getall-category`);
+        const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/getall-category`);
         if (data.category) {
             setCategories(data.category);
         } else {
@@ -57,7 +57,7 @@ const UpdateProduct = () => {
             prodData.append("quantity", quantity);
             prodData.append("photo", photo);
             prodData.append("shipping", shipping);
-            const { data } = await axios.put(`https://upset-jade-bream.cyclic.app/api/update-product/${id}`, prodData);
+            const { data } = await axios.put(`https://ecommerce-server-pearl.vercel.app/api/update-product/${id}`, prodData);
             console.log(data);
             if (data?.product) {
                 toast.success("Product Updated Successfully!!");
@@ -76,7 +76,7 @@ const UpdateProduct = () => {
         try {
             let ans = window.prompt("Are you sure to delete this product?")
             if(!ans) return;
-            const {data} = await axios.delete(`https://upset-jade-bream.cyclic.app/api/delete-product/${id}`);
+            const {data} = await axios.delete(`https://ecommerce-server-pearl.vercel.app/api/delete-product/${id}`);
             if(data.product){
                 navigate(`/dashboard/admin/products`)
                 setTimeout(()=>{
@@ -137,7 +137,7 @@ const UpdateProduct = () => {
                                     </div>
                                 ) : (
                                     <div className='text-center'>
-                                        <img src={ `https://upset-jade-bream.cyclic.app/api/product-photo/${id}`}
+                                        <img src={ `https://ecommerce-server-pearl.vercel.app/api/product-photo/${id}`}
                                             alt="product-photo" height={"200px"}
                                             className='img img-responsive' />
                                     </div>

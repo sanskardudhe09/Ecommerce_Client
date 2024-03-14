@@ -5,7 +5,7 @@ export default function useCategory(){
     const [categories, setCategories] =  useState([]);
      const getCategories = async () => {
         try {
-            const {data} = await axios.get(`https://upset-jade-bream.cyclic.app/api/getall-category`);
+            const {data} = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/getall-category`);
             setCategories(data?.category);
         } catch (error) {
             toast.error("Something went wrong!!")

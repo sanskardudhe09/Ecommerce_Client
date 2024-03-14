@@ -11,7 +11,7 @@ const Orders = () => {
     const [orders, setOrders] = useState([]);
     const getOrders = async () => {
         try {
-            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/order`);
+            const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/order`);
             setOrders(data);
         } catch (error) {
             toast.error("Something went wrong!!");
@@ -59,7 +59,7 @@ const Orders = () => {
                                             { o?.products?.map((p) => (
                                                 <div className='row p-3 mb-2'>
                                                     <div className='col-md-4'>
-                                                        <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
+                                                        <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top"
                                                             style={{ height: "300px" }} alt="product image" />
                                                     </div>
                                                     <div className='col-md-8'>
@@ -105,7 +105,7 @@ const Orders = () => {
                                             { o?.products?.map((p) => (
                                                 <div className='row p-3 mb-2'>
                                                     <div className='col-md-4'>
-                                                        <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
+                                                        <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top"
                                                             style={{ height: "300px" }} alt="product image" />
                                                     </div>
                                                     <div className='col-md-8'>

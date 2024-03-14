@@ -12,7 +12,7 @@ const CategoryProdPage = () => {
     const navigate = useNavigate();
     const getProductsByCategory = async () => {
         try {
-            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/category-product/${params.slug}`);
+            const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/category-product/${params.slug}`);
             setCategory(data?.category);
             setProducts(data?.products);
         } catch (error) {
@@ -32,7 +32,7 @@ const CategoryProdPage = () => {
                         <div className='d-flex flex-wrap'>
                             {products?.map((p) => (
                                 <div className="card m-3 category" style={{ width: '25rem' }} key={p._id}>
-                                    <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
+                                    <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top"
                                         style={{ height: "300px" }} alt="product image" />
                                     <div className="card-body">
                                         <h5 className="card-title">{p.name}</h5>

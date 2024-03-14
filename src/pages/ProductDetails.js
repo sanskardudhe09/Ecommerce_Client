@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const navigate = useNavigate();
     const getProduct = async () => {
         try {
-            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/get-product/${params.slug}`);
+            const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/get-product/${params.slug}`);
             setProduct(data?.product);
             getSimilarProd(data?.product._id, data?.product.prodcategory._id);
         } catch (error) {
@@ -20,7 +20,7 @@ const ProductDetails = () => {
     }
     const getSimilarProd = async (pid, cid) => {
         try {
-            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/similar-products/${pid}/${cid}`);
+            const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/similar-products/${pid}/${cid}`);
             setSimilarProd(data?.products);
         } catch (error) {
             toast.error("Something went wrong!!")
@@ -33,7 +33,7 @@ const ProductDetails = () => {
         <Layout>
             <div className='row container mt-4 prod-detail-page'>
                 <div className='col-md-6'>
-                    <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${product._id}`} className="card-img-top"
+                    <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${product._id}`} className="card-img-top"
                         style={{ height: "450px" }} alt="product image" />
                 </div>
                 <div className='card col-md-6 ml-2' style={{ height: "250px", borderColor: "gray" }}>
@@ -52,7 +52,7 @@ const ProductDetails = () => {
                     <div className='d-flex flex-wrap'>
                         {similarprod?.map((p) => (
                             <div className="card m-3" style={{ width: '25rem' }} key={p._id}>
-                                <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
+                                <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top"
                                     style={{ height: "300px" }} alt="product image" />
                                 <div className="card-body">
                                     <h5 className="card-title">{p.name}</h5>

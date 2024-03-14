@@ -9,7 +9,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
     const getAllProducts = async () => {
         try {
-            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/getall-products`);
+            const { data } = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/getall-products`);
             if (data?.products) {
                 setProducts(data?.products);
             } else {
@@ -35,7 +35,7 @@ const Products = () => {
                          {products.map((p) => (
                             <Link key={p._id} to= {`/dashboard/admin/product/${p.slug}`} style={{textDecoration:"none"}}>
                             <div className="card m-3" style={{ width: '25rem' }}>
-                                <img src={ `https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top" 
+                                <img src={ `https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top" 
                                 style={{height: "300px"}}alt="product image" />
                                 <div className="card-body">
                                     <h5 className="card-title">{p.name}</h5>
@@ -52,7 +52,7 @@ const Products = () => {
                          {products.map((p) => (
                             <Link key={p._id} to= {`/dashboard/admin/product/${p.slug}`} style={{textDecoration:"none"}}>
                             <div className="card m-3 w-75">
-                                <img src={ `https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top" 
+                                <img src={ `https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top" 
                                 style={{height: "300px"}}alt="product image" />
                                 <div className="card-body">
                                     <h5 className="card-title">{p.name}</h5>

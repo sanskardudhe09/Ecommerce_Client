@@ -36,7 +36,7 @@ const CartPage = () => {
     }
     const getTokens = async () => {
         try {
-            const {data} = await axios.get(`https://upset-jade-bream.cyclic.app/api/braintree-token`);
+            const {data} = await axios.get(`https://ecommerce-server-pearl.vercel.app/api/braintree-token`);
             console.log(data);
             setClientToken(data?.clientToken);
             console.log(clientToken)
@@ -48,7 +48,7 @@ const CartPage = () => {
         try {
             setLoading(true);
             const {nonce} = await instance.requestPaymentMethod();
-            const {data} = await axios.post(`https://upset-jade-bream.cyclic.app/api/payment`, {nonce, cart});
+            const {data} = await axios.post(`https://ecommerce-server-pearl.vercel.app/api/payment`, {nonce, cart});
             setLoading(false);
             localStorage.removeItem("cart");
             setCart([]);
@@ -83,7 +83,7 @@ const CartPage = () => {
                         {cart?.map((p) => (
                             <div className='row p-3 mb-2'>
                                 <div className='col-md-4'>
-                                    <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
+                                    <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top"
                                         style={{ height: "300px" }} alt="product image" />
                                 </div>
                                 <div className='col-md-8'>
