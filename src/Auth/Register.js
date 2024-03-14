@@ -15,7 +15,7 @@ const Register = () => {
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const res = await axios.post(`https://ecommerce-server-6dot.onrender.com/api/register`, {name,email,password,phone,address,answer})
+        const res = await axios.post(`https://upset-jade-bream.cyclic.app/api/register`, {name,email,password,phone,address,answer})
         console.log(res);
         if(res.data.user){
             console.log(res.data.user);

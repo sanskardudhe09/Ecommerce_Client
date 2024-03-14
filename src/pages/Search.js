@@ -15,7 +15,7 @@ const Search = () => {
                 <div className='d-flex flex-wrap'>
                     {values?.results.map((p) => (
                         <div className="card m-3" style={{ width: '25rem' }} key={p._id}>
-                            <img src={`https://ecommerce-server-6dot.onrender.com/api/product-photo/${p._id}`} className="card-img-top"
+                            <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
                                 style={{ height: "300px" }} alt="product image" />
                             <div className="card-body">
                                 <h5 className="card-title">{p.name}</h5>

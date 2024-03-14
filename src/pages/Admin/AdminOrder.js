@@ -14,7 +14,7 @@ const AdminOrder = () => {
     const [changeStatus, setChangeStatus] = useState("");
     const getOrders = async () => {
         try {
-            const { data } = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/allorder`);
+            const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/allorder`);
             setOrders(data);
         } catch (error) {
             toast.error("Something went wrong!!");
@@ -22,7 +22,7 @@ const AdminOrder = () => {
     }
     const updateStatus = async (id, val) => {
         try {
-            const {data} =  await axios.put(`https://ecommerce-server-6dot.onrender.com/api/update-status/${id}`, {status: val});
+            const {data} =  await axios.put(`https://upset-jade-bream.cyclic.app/api/update-status/${id}`, {status: val});
             getOrders();
         } catch (error) {
             toast.error("Something went wrong!!");
@@ -78,7 +78,7 @@ const AdminOrder = () => {
                                             { o?.products?.map((p) => (
                                                 <div className='row p-3 mb-2'>
                                                     <div className='col-md-4'>
-                                                        <img src={`https://ecommerce-server-6dot.onrender.com/api/product-photo/${p._id}`} className="card-img-top"
+                                                        <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
                                                             style={{ height: "300px" }} alt="product image" />
                                                     </div>
                                                     <div className='col-md-8'>

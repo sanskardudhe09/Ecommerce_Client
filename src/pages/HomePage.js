@@ -21,7 +21,7 @@ const HomePage = () => {
   const getAllProducts = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/product-list/${page}`);
+      const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/product-list/${page}`);
       setLoading(false);
       if (data?.products) {
         setProducts(data.products);
@@ -37,14 +37,14 @@ const HomePage = () => {
 
   const getProdCount = async () => {
     try {
-      const { data } = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/product-count`);
+      const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/product-count`);
       setTotal(data?.count);
     } catch (error) {
       toast.error("Something went wrong!!")
     }
   }
   const getAllCategory = async (req, res) => {
-    const { data } = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/getall-category`);
+    const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/getall-category`);
     if (data.category) {
       setCategories(data.category);
     } else {
@@ -54,7 +54,7 @@ const HomePage = () => {
 
   const filterProducts = async (req, res) => {
     try {
-      const { data } = await axios.post(`https://ecommerce-server-6dot.onrender.com/api/product-filters`, { checked, radio });
+      const { data } = await axios.post(`https://upset-jade-bream.cyclic.app/api/product-filters`, { checked, radio });
       if (data?.product) {
         setProducts(data?.product);
       } else {
@@ -77,7 +77,7 @@ const HomePage = () => {
   const loadMore = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/product-list/${page}`);
+      const { data } = await axios.get(`https://upset-jade-bream.cyclic.app/api/product-list/${page}`);
       setLoading(false)
       if (data?.products) {
         setProducts([...products, ...data.products]);
@@ -142,7 +142,7 @@ const HomePage = () => {
           <div className='d-flex flex-wrap'>
             {products?.map((p) => (
               <div className="card m-3" style={{ width: '28rem', borderColor: "lightblue" }} key={p._id}>
-                <img src={`https://ecommerce-server-6dot.onrender.com/api/product-photo/${p._id}`} className="card-img-top"
+                <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
                   style={{ height: "300px" }} alt="product image" />
                 <div className="card-body">
                   <h5 className="card-title">{p.name}</h5>

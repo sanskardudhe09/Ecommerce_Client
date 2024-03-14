@@ -12,7 +12,7 @@ const CreateCategory = () => {
     const [visible, setVisible] = useState(false);
     const [updatedname, setUpdatedName] = useState('');
     const getAllCategory = async (req,res) => {
-        const {data} = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/getall-category`);
+        const {data} = await axios.get(`https://upset-jade-bream.cyclic.app/api/getall-category`);
         if(data.category){
             setCategories(data.category);
         }else{
@@ -22,7 +22,7 @@ const CreateCategory = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const {data} = await axios.post(`https://ecommerce-server-6dot.onrender.com/api/create-category`, {name});
+            const {data} = await axios.post(`https://upset-jade-bream.cyclic.app/api/create-category`, {name});
             if(data?.category){
                 toast.success(`${data.category.name} is added`);
                 setName('');
@@ -38,7 +38,7 @@ const CreateCategory = () => {
     const handleUpdate = async (e) => {
         e.preventDefault();
         try {
-            const {data} = await axios.put(`https://ecommerce-server-6dot.onrender.com/api/update-category/${selected._id}`, {name:updatedname})
+            const {data} = await axios.put(`https://upset-jade-bream.cyclic.app/api/update-category/${selected._id}`, {name:updatedname})
             if(data.category){
                 toast.success(`${selected.name} is updated to ${updatedname}`);
                 setSelected(null);
@@ -55,7 +55,7 @@ const CreateCategory = () => {
 
     const handleDelete = async (id) => {
         try {
-            const {data} = await axios.delete(`https://ecommerce-server-6dot.onrender.com/api/delete-category/${id}`);
+            const {data} = await axios.delete(`https://upset-jade-bream.cyclic.app/api/delete-category/${id}`);
             if(data.message == "Category deleted successfully!!"){
                 toast.success(data.message);
                 getAllCategory();

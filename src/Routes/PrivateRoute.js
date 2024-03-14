@@ -12,7 +12,7 @@ const PrivateRoute = () => {
   const [auth, setAuth] = useAuth();
   useEffect(()=> {
     const userCheck = async () => {
-        const res = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/authroute`, {
+        const res = await axios.get(`https://upset-jade-bream.cyclic.app/api/authroute`, {
             headers: {
                 Authorization: auth?.token
             }

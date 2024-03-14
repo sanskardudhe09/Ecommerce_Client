@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://ecommerce-server-6dot.onrender.com",
+  "proxy": "https://upset-jade-bream.cyclic.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

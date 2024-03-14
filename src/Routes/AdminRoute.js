@@ -10,7 +10,7 @@ const AdminRoute = () => {
   const [auth, setAuth] = useAuth();
   useEffect(()=> {
     const userCheck = async () => {
-        const res = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/admin-auth`, {
+        const res = await axios.get(`https://upset-jade-bream.cyclic.app/api/admin-auth`, {
         })
         if(res.data.ok) setOK(true);
         else setOK(false); 

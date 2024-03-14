@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const res = await axios.post(`https://ecommerce-server-6dot.onrender.com/api/login`, {email,password});
+      const res = await axios.post(`https://upset-jade-bream.cyclic.app/api/login`, {email,password});
       if(res && res.data.user){
           toast.success("User Logged In Successfully!!");
           setAuth({

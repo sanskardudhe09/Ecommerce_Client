@@ -9,7 +9,7 @@ const [users, setUsers] = useState([]);
 const [auth, setAuth] = useAuth();
 const getAllusers = async () => {
     try {
-        const {data} = await axios.get(`https://ecommerce-server-6dot.onrender.com/api/get-allusers`);
+        const {data} = await axios.get(`https://upset-jade-bream.cyclic.app/api/get-allusers`);
         setUsers(data);
     } catch (error) {
         toast.error("Something went wrong!!")
