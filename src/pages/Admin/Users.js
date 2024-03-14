@@ -57,7 +57,7 @@ useEffect(()=>{
                 </div>
             </div>
             <div className='adminuser-responsive'>
-                <div className='card w-75 m-3 p-1 border-shadow'>
+                <div className='card m-3 p-1 border-shadow' style={{width: "89%"}}>
                     <h2>Users</h2>
                     {users?.map((o, i) => {
                                 return (
