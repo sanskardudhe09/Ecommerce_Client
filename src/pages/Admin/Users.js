@@ -37,7 +37,6 @@ const Users = () => {
                                                 <tr>
                                                     <th scope="col">#</th>
                                                     <th scope="col">Name</th>
-                                                    <th scope="col">Email</th>
                                                     <th scope="col">Phone</th>
                                                     <th scope="col">Address</th>
                                                 </tr>
@@ -46,7 +45,6 @@ const Users = () => {
                                                 <tr>
                                                     <td>{1 + i}</td>
                                                     <td>{o.name}</td>
-                                                    <td>{o.email}</td>
                                                     <td>{o.phone}</td>
                                                     <td>{o.address}</td>
                                                 </tr>

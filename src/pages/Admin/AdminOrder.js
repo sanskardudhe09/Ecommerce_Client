@@ -108,7 +108,6 @@ const AdminOrder = () => {
                                                     <th scope="col">Status</th>
                                                     <th scope="col">Buyer</th>
                                                     <th scope="col">Payment</th>
-                                                    <th scope="col">Quantity</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -125,7 +124,6 @@ const AdminOrder = () => {
                                                     </td>
                                                     <td>{o.buyer.name}</td>
                                                     <td>{o.payment.success ? "Success" : "Failed"}</td>
-                                                    <td>{o?.products.length}</td>
                                                 </tr>
                                             </tbody>
                                         </table>

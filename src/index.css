@@ -176,7 +176,7 @@ main{
   display: none;
  }
  .prod-nonresponsive{
-  display: flex;
+  display: block;
  }
  @media screen and (max-width: 600px){
   .cart-page{
@@ -317,7 +317,7 @@ main{
     display: block;
    }
    .prod-responsive{
-    display: block;
+    display: flex;
    }
    .prod-nonresponsive{
     display: none;
