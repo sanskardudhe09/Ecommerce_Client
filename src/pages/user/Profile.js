@@ -5,6 +5,7 @@ import { useAuth } from '../../context/auth'
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import '../../Auth/auth.css';
+import "../../index.css";
 import axios from 'axios';
 const Profile = () => {
     const [auth, setAuth] = useAuth();
@@ -43,7 +44,7 @@ const Profile = () => {
         <Layout>
             <div className='m-3 p-3'>
                 <div className='row'>
-                    <div className='col-md-3'>
+                    <div className='col-md-3 userdashleft'>
                         <UserPanel />
                     </div>
                     <div className='col-md-9'>

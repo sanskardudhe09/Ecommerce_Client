@@ -154,6 +154,18 @@ main{
 .userdashright-nonresponsive{
   display: flex;
 }
+ .admindashright-responsive{
+  display: none;
+ }
+ .admindashright-nonresponsive{
+  display: flex;
+ }
+ .userorder-responsive{
+  display: none;
+ }
+ .userorder-nonresponsive{
+  display: flex;
+ }
  @media screen and (max-width: 600px){
   .cart-page{
     margin-right: 30px;
@@ -259,12 +271,27 @@ main{
   .userdashleft{
     width: 70%;
   }
+  .admindashleft{
+    width: 70%;
+  }
   .userdashright-responsive{
     display: block;
   }
   .userdashright-nonresponsive{
     display: none;
   }
+  .admindashright-responsive{
+    display: block;
+  }
+  .admindashright-nonresponsive{
+    display: none;
+  }
+  .userorder-responsive{
+    display: block;
+   }
+   .userorder-nonresponsive{
+    display: none;
+   }
  }
  @media screen and (max-width: 500px) {
   .card-body{

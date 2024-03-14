@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useAuth } from '../../context/auth';
 const moment = require('moment');
+import "../../index.css";
 const Orders = () => {
     const [auth, setAuth] = useAuth();
     const [orders, setOrders] = useState([]);
@@ -23,11 +24,59 @@ const Orders = () => {
         <Layout>
             <div className='container-fluid m-3 p-3'>
                 <div className='row'>
-                    <div className='col-md-3'>
+                    <div className='col-md-3 userdashleft'>
                         <UserPanel />
                     </div>
-                    <div className='col-md-9'>
+                    <div className='col-md-9 userorder-nonresponsive'>
                         <div className='card w-75 m-3 p-2'>
+                            <h2 className='text-center'>Orders</h2>
+                            {orders?.map((o, i) => {
+                                return (
+                                    <div>
+                                        <table className="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Buyer</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Payment</th>
+                                                    <th scope="col">Quantity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>{1 + i}</td>
+                                                    <td>{o.status}</td>
+                                                    <td>{o.buyer.name}</td>
+                                                    <td>{moment(o.createdAt).fromNow()}</td>
+                                                    <td>{o.payment.success ? "Success" : "Failed"}</td>
+                                                    <td>{o?.products.length}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            { o?.products?.map((p) => (
+                                                <div className='row p-3 mb-2'>
+                                                    <div className='col-md-4'>
+                                                        <img src={`https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top"
+                                                            style={{ height: "300px" }} alt="product image" />
+                                                    </div>
+                                                    <div className='col-md-8'>
+                                                        <h4>{p.name}</h4>
+                                                        <p>{p.desc}</p>
+                                                        <h4>Price: Rs {p.price}</h4>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div className='userorder-responsive'>
+                        <div className='card w-50 m-3 p-2'>
                             <h2 className='text-center'>Orders</h2>
                             {orders?.map((o, i) => {
                                 return (
