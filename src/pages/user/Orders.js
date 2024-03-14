@@ -4,8 +4,8 @@ import UserPanel from '../../components/Layout/UserPanel'
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useAuth } from '../../context/auth';
-const moment = require('moment');
 import "../../index.css";
+const moment = require('moment');
 const Orders = () => {
     const [auth, setAuth] = useAuth();
     const [orders, setOrders] = useState([]);
