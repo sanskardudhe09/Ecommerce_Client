@@ -317,7 +317,7 @@ main{
     display: block;
    }
    .prod-responsive{
-    display: flex;
+    display: block;
    }
    .prod-nonresponsive{
     display: none;
