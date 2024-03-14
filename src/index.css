@@ -301,6 +301,9 @@ main{
    .userorder-responsive .table{
     font-size: 14px;
    }
+   .adminuser-responsive .table{
+    font-size: 14px;
+   }
    .adminuser-nonresponsive{
     display: none;
    }
