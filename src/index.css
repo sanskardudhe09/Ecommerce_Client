@@ -172,6 +172,12 @@ main{
  .adminuser-responsive{
   display: none;
  }
+ .prod-responsive{
+  display: none;
+ }
+ .prod-nonresponsive{
+  display: flex;
+ }
  @media screen and (max-width: 600px){
   .cart-page{
     margin-right: 30px;
@@ -309,6 +315,12 @@ main{
    }
    .adminuser-responsive{
     display: block;
+   }
+   .prod-responsive{
+    display: block;
+   }
+   .prod-nonresponsive{
+    display: none;
    }
  }
  @media screen and (max-width: 500px) {
