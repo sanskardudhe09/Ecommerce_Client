@@ -166,6 +166,12 @@ main{
  .userorder-nonresponsive{
   display: flex;
  }
+ .adminuser-nonresponsive{
+  display: flex;
+ }
+ .adminuser-responsive{
+  display: none;
+ }
  @media screen and (max-width: 600px){
   .cart-page{
     margin-right: 30px;
@@ -294,6 +300,12 @@ main{
    }
    .userorder-responsive .table{
     font-size: 14px;
+   }
+   .adminuser-nonresponsive{
+    display: none;
+   }
+   .adminuser-responsive{
+    display: block;
    }
  }
  @media screen and (max-width: 500px) {

@@ -4,7 +4,8 @@ import AdminPanel from '../../components/Layout/AdminPanel';
 import {Select} from 'antd';
 import {toast, ToastContainer} from 'react-toastify';
 import {useNavigate} from 'react-router-dom';
-import axios from 'axios'
+import axios from 'axios';
+import "../../index.css";
 const {Option} = Select
 const CreateProduct = () => {
   const [categories, setCategories] = useState([]);
@@ -62,9 +63,9 @@ const CreateProduct = () => {
   },[])
   return (
     <Layout>
-        <div className='container-fluid m-3 p-3' style={{height: "600px"}}>
+        <div className='container-fluid m-3 p-3' style={{minHeight: "600px"}}>
             <div className='row'>
-                <div className='col-md-3'>
+                <div className='col-md-3 admindashleft'>
                     <AdminPanel />
                 </div>
                 <div className='col-md-9'>

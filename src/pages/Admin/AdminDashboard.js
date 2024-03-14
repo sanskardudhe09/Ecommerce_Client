@@ -23,9 +23,9 @@ const AdminDashboard = () => {
                     </div>
                 </div>
                 <div className='admindashright-responsive'>
-                    <div className='card w-75 m-5 p-3'>
+                    <div className='card w-75 m-3 p-3'>
                         <h2 className='text-center'>Admin Details</h2>
-                        <div className='d-flex flex-column justify-content-center'>
+                        <div className='d-flex flex-column'>
                           <h3 className='text-center'>Name: {auth?.user?.name}</h3>
                           <h3 className='text-center'>Email: {auth?.user?.email}</h3>
                           <h3 className='text-center'>Contact No: {auth?.user?.phone}</h3>

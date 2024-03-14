@@ -4,7 +4,8 @@ import AdminPanel from '../../components/Layout/AdminPanel';
 import CategoryForm from '../../components/Form/CategoryForm';
 import {toast, ToastContainer} from 'react-toastify';
 import {Modal} from 'antd';
-import axios from 'axios'
+import axios from 'axios';
+import "../../index.css";
 const CreateCategory = () => {
     const [categories, setCategories] = useState([]);
     const [name,setName] = useState('');
@@ -73,7 +74,7 @@ const CreateCategory = () => {
         <Layout>
             <div className='container-fluid m-3 p-3'>
                 <div className='row'>
-                    <div className='col-md-3'>
+                    <div className='col-md-3 admindashleft'>
                         <AdminPanel />
                     </div>
                     <div className='col-md-9'>

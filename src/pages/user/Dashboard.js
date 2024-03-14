@@ -15,7 +15,7 @@ const [auth, setAuth] = useAuth();
                 </div>
                 <div className='col-md-9 userdashright-nonresponsive'>
                     <div className='card w-50 m-5 p-2'>
-                        <h2 className='text-center'>Admin Details</h2>
+                        <h2 className='text-center'>User Details</h2>
                         <div className='d-flex flex-column justify-content-center'>
                           <h3 className='text-center'>Name: {auth?.user?.name}</h3>
                           <h3 className='text-center'>Email: {auth?.user?.email}</h3>
@@ -24,9 +24,9 @@ const [auth, setAuth] = useAuth();
                     </div>
                 </div>
                 <div className='userdashright-responsive'>
-                    <div className='card w-75 m-5 p-2'>
-                        <h2 className='text-center'>Admin Details</h2>
-                        <div className='d-flex flex-column justify-content-center'>
+                    <div className='card w-75 m-3 p-2'>
+                        <h2 className='text-center'>User Details</h2>
+                        <div className='d-flex flex-column'>
                           <h3 className='text-center'>Name: {auth?.user?.name}</h3>
                           <h3 className='text-center'>Email: {auth?.user?.email}</h3>
                           <h3 className='text-center'>Contact No: {auth?.user?.phone}</h3>
