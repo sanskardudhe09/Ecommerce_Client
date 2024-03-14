@@ -292,6 +292,9 @@ main{
    .userorder-nonresponsive{
     display: none;
    }
+   .userorder-responsive .table{
+    width: 60%;
+   }
  }
  @media screen and (max-width: 500px) {
   .card-body{

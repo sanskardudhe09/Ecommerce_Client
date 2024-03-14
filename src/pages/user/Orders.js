@@ -76,7 +76,7 @@ const Orders = () => {
                         </div>
                     </div>
                     <div className='userorder-responsive'>
-                        <div className='card w-50 m-3 p-2'>
+                        <div className='card w-75 m-3 p-2'>
                             <h2 className='text-center'>Orders</h2>
                             {orders?.map((o, i) => {
                                 return (
