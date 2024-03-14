@@ -46,12 +46,12 @@ const Products = () => {
                           ))}
                         </div>
                     </div>
-                    <div className='prod-responsive'>
+                    <div className='col-md-9 prod-responsive'>
                         <h2 className='text-center'>All Products</h2>
                         <div className='d-flex flex-wrap'>
                          {products.map((p) => (
                             <Link key={p._id} to= {`/dashboard/admin/product/${p.slug}`} style={{textDecoration:"none"}}>
-                            <div className="card m-3" style={{ width: '25rem' }}>
+                            <div className="card m-3 w-75">
                                 <img src={ `https://upset-jade-bream.cyclic.app/api/product-photo/${p._id}`} className="card-img-top" 
                                 style={{height: "300px"}}alt="product image" />
                                 <div className="card-body">
