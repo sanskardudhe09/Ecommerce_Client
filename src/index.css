@@ -11,6 +11,11 @@
 main{
   background-size: cover;
 }
+@media only screen and (max-width: 1600px) {
+  .products-card {
+    width: 20rem;
+  }
+}
 /*styling for navbar*/
 .navbar{
     font-size: 20px;
