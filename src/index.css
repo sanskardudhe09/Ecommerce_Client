@@ -12,7 +12,7 @@ main{
   background-size: cover;
 }
 @media only screen and (max-width: 1600px) {
-  .products-card {
+  .product-card {
     width: 20rem;
   }
 }
