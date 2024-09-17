@@ -15,7 +15,9 @@ main{
   .product-card {
     width: 20rem;
   }
-  
+  .prod-container{
+      justify-content: space-evenly;
+  }
   .cat-price{
       width: 235px;
   }
