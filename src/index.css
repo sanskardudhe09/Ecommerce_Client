@@ -15,9 +15,7 @@ main{
   .product-card {
     width: 20rem;
   }
-  .products{
-      margin-left: 100px;
-  }
+  
   .cat-price{
       width: 235px;
   }
