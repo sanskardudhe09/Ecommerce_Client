@@ -139,7 +139,7 @@ const HomePage = () => {
         </div>
         <div className='col-md-10 products'>
           <h2 className='text-center'>All Products</h2>
-          <div className='d-flex flex-wrap'>
+          <div className='d-flex flex-wrap prod-container'>
             {products?.map((p) => (
               <div className="card m-3 product-card" style={{ borderColor: "lightblue" }} key={p._id}>
                 <img src={`https://ecommerce-server-pearl.vercel.app/api/product-photo/${p._id}`} className="card-img-top"
