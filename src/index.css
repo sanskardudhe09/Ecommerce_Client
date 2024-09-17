@@ -16,6 +16,11 @@ main{
     width: 20rem;
   }
 }
+@media only screen and (min-width: 1650px) {
+  .product-card {
+    width: 28rem;
+  }
+}
 /*styling for navbar*/
 .navbar{
     font-size: 20px;
